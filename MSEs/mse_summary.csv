@@ -1,0 +1,2 @@
+model,slug,status,mse,elapsed_sec,resolution_deg,map_path,data_path,error
+Qwen/Qwen3-4B,Qwen_Qwen3-4B_reasoning_n20,completed,0.19642220419390058,85316.55,2.0,/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n20.png,/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n20_data.json,

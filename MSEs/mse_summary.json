@@ -1,0 +1,20 @@
+{
+  "resolution_deg": 2.0,
+  "ground_truth_map_path": "/ceph/adinchev/experiment/Generated models/ground_truth_map.png",
+  "ground_truth_data_path": "/ceph/adinchev/experiment/Generated models/ground_truth_map_data.json",
+  "results": [
+    {
+      "model": "Qwen/Qwen3-4B",
+      "slug": "Qwen_Qwen3-4B_reasoning_n20",
+      "status": "completed",
+      "mse": 0.19642220419390058,
+      "elapsed_sec": 85316.55,
+      "resolution_deg": 2.0,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n20.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n20_data.json",
+      "error": "",
+      "reasoning": true,
+      "num_samples": 20
+    }
+  ]
+}
