@@ -1,0 +1,23 @@
+{
+  "resolution_deg": 2.0,
+  "memory_size": 3,
+  "context_source": "groundtruth",
+  "anchor": null,
+  "results": [
+    {
+      "model": "casperhansen/mixtral-instruct-awq",
+      "slug": "casperhansen_mixtral-instruct-awq_groundtruth3",
+      "context_source": "groundtruth",
+      "memory_size": 3,
+      "anchor_key": null,
+      "anchor_name": null,
+      "status": "completed",
+      "mse": 0.06798926389609604,
+      "elapsed_sec": 1210.07,
+      "resolution_deg": 2.0,
+      "map_path": "/ceph/adinchev/experiment/Generated models/casperhansen_mixtral-instruct-awq_groundtruth3.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/casperhansen_mixtral-instruct-awq_groundtruth3_data.json",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+model,slug,status,mse,elapsed_sec,resolution_deg,map_path,data_path,error
+Qwen/Qwen2.5-7B-Instruct,Qwen_Qwen2.5-7B-Instruct_memory3_perrowseed,completed,0.3215771130349779,785.42,2.0,/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_perrowseed.png,/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_perrowseed_data.json,

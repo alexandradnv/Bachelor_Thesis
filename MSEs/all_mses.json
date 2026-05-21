@@ -1,18 +1,6 @@
 {
-  "count": 64,
+  "count": 90,
   "results": [
-    {
-      "slug": "INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_en",
-      "model": "INSAIT-Institute/BgGPT-Gemma-3-27B-IT-GPTQ-W4A16",
-      "mse": 0.1527262718741422,
-      "stored_mse": 0.1527262718741422,
-      "resolution_deg": 2.0,
-      "n_rows": 90,
-      "n_cols": 180,
-      "elapsed_sec": 218.47,
-      "map_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_en.png",
-      "data_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_en_data.json"
-    },
     {
       "slug": "INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16",
       "model": "INSAIT-Institute/BgGPT-Gemma-3-27B-IT-GPTQ-W4A16",
@@ -24,6 +12,42 @@
       "elapsed_sec": 230.48,
       "map_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16.png",
       "data_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_data.json"
+    },
+    {
+      "slug": "INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_en",
+      "model": "INSAIT-Institute/BgGPT-Gemma-3-27B-IT-GPTQ-W4A16",
+      "mse": 0.15326089578328916,
+      "stored_mse": 0.15326089578328916,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 231.19,
+      "map_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_en.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_en_data.json"
+    },
+    {
+      "slug": "google_gemma-3-27b-it_lang_ru",
+      "model": "google/gemma-3-27b-it",
+      "mse": 0.18117742326245181,
+      "stored_mse": 0.18117742326245181,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 165.52,
+      "map_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-27b-it_lang_ru.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-27b-it_lang_ru_data.json"
+    },
+    {
+      "slug": "google_gemma-3-27b-it_lang_bg",
+      "model": "google/gemma-3-27b-it",
+      "mse": 0.18707187117388951,
+      "stored_mse": 0.18707187117388951,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 151.26,
+      "map_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-27b-it_lang_bg.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-27b-it_lang_bg_data.json"
     },
     {
       "slug": "mistralai_Mistral-Small-24B-Instruct-2501",
@@ -38,6 +62,30 @@
       "data_path": "/ceph/adinchev/experiment/Generated models/mistralai_Mistral-Small-24B-Instruct-2501_data.json"
     },
     {
+      "slug": "Qwen_Qwen3-4B_reasoning_n20",
+      "model": "Qwen/Qwen3-4B",
+      "mse": 0.19642220419390058,
+      "stored_mse": 0.19642220419390058,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 85316.55,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n20.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n20_data.json"
+    },
+    {
+      "slug": "Qwen_Qwen3-4B_reasoning_n15",
+      "model": "Qwen/Qwen3-4B",
+      "mse": 0.20447049733474126,
+      "stored_mse": 0.20447049733474126,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 63864.56,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n15.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n15_data.json"
+    },
+    {
       "slug": "Qwen_Qwen2.5-Coder-32B-Instruct-AWQ",
       "model": "Qwen/Qwen2.5-Coder-32B-Instruct-AWQ",
       "mse": 0.21011057543670322,
@@ -50,6 +98,18 @@
       "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-Coder-32B-Instruct-AWQ_data.json"
     },
     {
+      "slug": "Qwen_Qwen3-4B_reasoning_n10",
+      "model": "Qwen/Qwen3-4B",
+      "mse": 0.21118806545480565,
+      "stored_mse": 0.21118806545480565,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 42925.37,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n10.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n10_data.json"
+    },
+    {
       "slug": "allenai_Olmo-3.1-32B-Instruct",
       "model": "allenai/Olmo-3.1-32B-Instruct",
       "mse": 0.21621455132930867,
@@ -60,6 +120,54 @@
       "elapsed_sec": 3641.11,
       "map_path": "/ceph/adinchev/experiment/Generated models/allenai_Olmo-3.1-32B-Instruct.png",
       "data_path": "/ceph/adinchev/experiment/Generated models/allenai_Olmo-3.1-32B-Instruct_data.json"
+    },
+    {
+      "slug": "Qwen_Qwen2.5-3B-Instruct_groundtruth3",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "mse": 0.21829130732591182,
+      "stored_mse": 0.21829130732591182,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 614.56,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-3B-Instruct_groundtruth3.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-3B-Instruct_groundtruth3_data.json"
+    },
+    {
+      "slug": "Qwen_Qwen3-4B_reasoning_n5",
+      "model": "Qwen/Qwen3-4B",
+      "mse": 0.22568741426611796,
+      "stored_mse": 0.22568741426611796,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 22375.26,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n5.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n5_data.json"
+    },
+    {
+      "slug": "google_gemma-3-12b-it_lang_bg",
+      "model": "google/gemma-3-12b-it",
+      "mse": 0.22814979083137094,
+      "stored_mse": 0.22814979083137094,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 152.75,
+      "map_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it_lang_bg.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it_lang_bg_data.json"
+    },
+    {
+      "slug": "google_gemma-3-27b-it_lang_en",
+      "model": "google/gemma-3-27b-it",
+      "mse": 0.22996742804837916,
+      "stored_mse": 0.22996742804837916,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 200.64,
+      "map_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-27b-it_lang_en.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-27b-it_lang_en_data.json"
     },
     {
       "slug": "allenai_Olmo-3-7B-Think",
@@ -194,6 +302,18 @@
       "data_path": "/ceph/adinchev/experiment/Generated models/microsoft_Phi-3-medium-4k-instruct_data.json"
     },
     {
+      "slug": "INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_th",
+      "model": "INSAIT-Institute/BgGPT-Gemma-3-27B-IT-GPTQ-W4A16",
+      "mse": 0.2597993285590798,
+      "stored_mse": 0.2597993285590798,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 235.12,
+      "map_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_th.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_th_data.json"
+    },
+    {
       "slug": "Qwen_Qwen2.5-32B-Instruct-AWQ_anchors5",
       "model": "Qwen/Qwen2.5-32B-Instruct-AWQ",
       "mse": 0.2649282119670046,
@@ -228,6 +348,18 @@
       "elapsed_sec": 92.94,
       "map_path": "/ceph/adinchev/experiment/Generated models/upstage_SOLAR-10.7B-Instruct-v1.0.png",
       "data_path": "/ceph/adinchev/experiment/Generated models/upstage_SOLAR-10.7B-Instruct-v1.0_data.json"
+    },
+    {
+      "slug": "google_gemma-3-12b-it_lang_th",
+      "model": "google/gemma-3-12b-it",
+      "mse": 0.2703209868221527,
+      "stored_mse": 0.2703209868221527,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 199.7,
+      "map_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it_lang_th.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it_lang_th_data.json"
     },
     {
       "slug": "Qwen_Qwen2.5-32B-Instruct-AWQ_anchors10",
@@ -302,6 +434,18 @@
       "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-32B-Instruct-AWQ_data.json"
     },
     {
+      "slug": "INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_de",
+      "model": "INSAIT-Institute/BgGPT-Gemma-3-27B-IT-GPTQ-W4A16",
+      "mse": 0.27933382630846615,
+      "stored_mse": 0.27933382630846615,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 201.02,
+      "map_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_de.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_de_data.json"
+    },
+    {
       "slug": "Qwen_Qwen2.5-32B-Instruct-AWQ_anchors20",
       "model": "Qwen/Qwen2.5-32B-Instruct-AWQ",
       "mse": 0.28334530729257945,
@@ -362,6 +506,30 @@
       "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-3B-Instruct_data.json"
     },
     {
+      "slug": "INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_ru",
+      "model": "INSAIT-Institute/BgGPT-Gemma-3-27B-IT-GPTQ-W4A16",
+      "mse": 0.2954867391615737,
+      "stored_mse": 0.2954867391615737,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 221.06,
+      "map_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_ru.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_ru_data.json"
+    },
+    {
+      "slug": "google_gemma-3-27b-it_lang_th",
+      "model": "google/gemma-3-27b-it",
+      "mse": 0.2983904415506217,
+      "stored_mse": 0.2983904415506217,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 194.14,
+      "map_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-27b-it_lang_th.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-27b-it_lang_th_data.json"
+    },
+    {
       "slug": "HuggingFaceH4_zephyr-7b-beta",
       "model": "HuggingFaceH4/zephyr-7b-beta",
       "mse": 0.29979465675641653,
@@ -388,14 +556,26 @@
     {
       "slug": "INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_bg",
       "model": "INSAIT-Institute/BgGPT-Gemma-3-27B-IT-GPTQ-W4A16",
-      "mse": 0.3077726350565146,
-      "stored_mse": 0.3077726350565146,
+      "mse": 0.3080353999306499,
+      "stored_mse": 0.3080353999306499,
       "resolution_deg": 2.0,
       "n_rows": 90,
       "n_cols": 180,
-      "elapsed_sec": 194.15,
+      "elapsed_sec": 222.08,
       "map_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_bg.png",
       "data_path": "/ceph/adinchev/experiment/Generated models/INSAIT-Institute_BgGPT-Gemma-3-27B-IT-GPTQ-W4A16_lang_bg_data.json"
+    },
+    {
+      "slug": "Qwen_Qwen2.5-7B-Instruct_memory3_shuffled",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "mse": 0.3095928915729269,
+      "stored_mse": 0.3095928915729269,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 822.91,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_shuffled.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_shuffled_data.json"
     },
     {
       "slug": "01-ai_Yi-1.5-9B-Chat",
@@ -408,6 +588,18 @@
       "elapsed_sec": 61.71,
       "map_path": "/ceph/adinchev/experiment/Generated models/01-ai_Yi-1.5-9B-Chat.png",
       "data_path": "/ceph/adinchev/experiment/Generated models/01-ai_Yi-1.5-9B-Chat_data.json"
+    },
+    {
+      "slug": "Qwen_Qwen2.5-3B-Instruct_memory3_shuffled",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "mse": 0.31438651493720926,
+      "stored_mse": 0.31438651493720926,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 565.09,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-3B-Instruct_memory3_shuffled.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-3B-Instruct_memory3_shuffled_data.json"
     },
     {
       "slug": "internlm_internlm2_5-7b-chat",
@@ -446,6 +638,18 @@
       "data_path": "/ceph/adinchev/experiment/Generated models/allenai_OLMo-3-1025-7B_stage1-step200000_data.json"
     },
     {
+      "slug": "Qwen_Qwen2.5-7B-Instruct_memory3_perrowseed",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "mse": 0.3215771130349779,
+      "stored_mse": 0.3215771130349779,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 785.42,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_perrowseed.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_perrowseed_data.json"
+    },
+    {
       "slug": "Qwen_Qwen2.5-32B-Instruct-AWQ_lang_es",
       "model": "Qwen/Qwen2.5-32B-Instruct-AWQ",
       "mse": 0.32252414392549306,
@@ -458,6 +662,18 @@
       "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-32B-Instruct-AWQ_lang_es_data.json"
     },
     {
+      "slug": "Qwen_Qwen2.5-7B-Instruct_memory3",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "mse": 0.32519301832275616,
+      "stored_mse": 0.32519301832275616,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 673.79,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_data.json"
+    },
+    {
       "slug": "Qwen_Qwen2.5-32B-Instruct",
       "model": "Qwen/Qwen2.5-32B-Instruct",
       "mse": 0.32803539215918504,
@@ -468,6 +684,54 @@
       "elapsed_sec": 182.23,
       "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-32B-Instruct.png",
       "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-32B-Instruct_data.json"
+    },
+    {
+      "slug": "google_gemma-3-12b-it_lang_de",
+      "model": "google/gemma-3-12b-it",
+      "mse": 0.33331255058030523,
+      "stored_mse": 0.33331255058030523,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 179.24,
+      "map_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it_lang_de.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it_lang_de_data.json"
+    },
+    {
+      "slug": "google_gemma-3-12b-it",
+      "model": "google/gemma-3-12b-it",
+      "mse": 0.33470178745127194,
+      "stored_mse": 0.33470178745127194,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 173.2,
+      "map_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it_data.json"
+    },
+    {
+      "slug": "google_gemma-3-12b-it_lang_en",
+      "model": "google/gemma-3-12b-it",
+      "mse": 0.3347326798293037,
+      "stored_mse": 0.3347326798293037,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 165.42,
+      "map_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it_lang_en.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it_lang_en_data.json"
+    },
+    {
+      "slug": "google_gemma-3-27b-it_lang_de",
+      "model": "google/gemma-3-27b-it",
+      "mse": 0.33512147387043445,
+      "stored_mse": 0.33512147387043445,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 154.41,
+      "map_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-27b-it_lang_de.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-27b-it_lang_de_data.json"
     },
     {
       "slug": "Qwen_Qwen2.5-32B-Instruct-AWQ_lang_ru",
@@ -554,6 +818,30 @@
       "data_path": "/ceph/adinchev/experiment/Generated models/allenai_OLMo-3-1025-7B_stage3-step6000_data.json"
     },
     {
+      "slug": "google_gemma-3-12b-it_lang_ru",
+      "model": "google/gemma-3-12b-it",
+      "mse": 0.40127581485590735,
+      "stored_mse": 0.40127581485590735,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 156.11,
+      "map_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it_lang_ru.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it_lang_ru_data.json"
+    },
+    {
+      "slug": "Qwen_Qwen2.5-3B-Instruct_memory3",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "mse": 0.4060959477602771,
+      "stored_mse": 0.4060959477602771,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 354.63,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-3B-Instruct_memory3.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-3B-Instruct_memory3_data.json"
+    },
+    {
       "slug": "Qwen_Qwen2.5-32B-Instruct-AWQ_lang_de",
       "model": "Qwen/Qwen2.5-32B-Instruct-AWQ",
       "mse": 0.4113269028031716,
@@ -566,6 +854,18 @@
       "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-32B-Instruct-AWQ_lang_de_data.json"
     },
     {
+      "slug": "Qwen_Qwen3-4B",
+      "model": "Qwen/Qwen3-4B",
+      "mse": 0.41146682250983996,
+      "stored_mse": 0.41146682250983996,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 112.78,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_data.json"
+    },
+    {
       "slug": "Qwen_Qwen2.5-14B-Instruct",
       "model": "Qwen/Qwen2.5-14B-Instruct",
       "mse": 0.41316932576956505,
@@ -576,6 +876,18 @@
       "elapsed_sec": 102.59,
       "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-14B-Instruct.png",
       "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-14B-Instruct_data.json"
+    },
+    {
+      "slug": "Qwen_Qwen2.5-3B-Instruct_memory3_perrowseed",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "mse": 0.4172667763322729,
+      "stored_mse": 0.4172667763322729,
+      "resolution_deg": 2.0,
+      "n_rows": 90,
+      "n_cols": 180,
+      "elapsed_sec": 554.7,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-3B-Instruct_memory3_perrowseed.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-3B-Instruct_memory3_perrowseed_data.json"
     },
     {
       "slug": "Qwen_Qwen2.5-Coder-14B-Instruct",

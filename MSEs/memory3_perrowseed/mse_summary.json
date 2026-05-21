@@ -1,0 +1,20 @@
+{
+  "resolution_deg": 2.0,
+  "memory_size": 3,
+  "mode": "perrowseed",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "slug": "Qwen_Qwen2.5-7B-Instruct_memory3_perrowseed",
+      "memory_size": 3,
+      "mode": "perrowseed",
+      "status": "completed",
+      "mse": 0.3215771130349779,
+      "elapsed_sec": 785.42,
+      "resolution_deg": 2.0,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_perrowseed.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_perrowseed_data.json",
+      "error": ""
+    }
+  ]
+}

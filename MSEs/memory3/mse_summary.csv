@@ -1,0 +1,2 @@
+model,slug,status,mse,elapsed_sec,resolution_deg,map_path,data_path,error
+Qwen/Qwen2.5-7B-Instruct,Qwen_Qwen2.5-7B-Instruct_memory3,completed,0.32519301832275616,673.79,2.0,/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3.png,/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_data.json,

@@ -1,0 +1,2 @@
+model,slug,status,mse,elapsed_sec,resolution_deg,map_path,data_path,error
+casperhansen/mixtral-instruct-awq,casperhansen_mixtral-instruct-awq_groundtruth3,completed,0.06798926389609604,1210.07,2.0,/ceph/adinchev/experiment/Generated models/casperhansen_mixtral-instruct-awq_groundtruth3.png,/ceph/adinchev/experiment/Generated models/casperhansen_mixtral-instruct-awq_groundtruth3_data.json,

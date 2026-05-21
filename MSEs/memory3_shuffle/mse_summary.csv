@@ -1,0 +1,2 @@
+model,slug,status,mse,elapsed_sec,resolution_deg,map_path,data_path,error
+Qwen/Qwen2.5-7B-Instruct,Qwen_Qwen2.5-7B-Instruct_memory3_shuffled,completed,0.3095928915729269,822.91,2.0,/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_shuffled.png,/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_shuffled_data.json,

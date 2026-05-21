@@ -1,0 +1,20 @@
+{
+  "resolution_deg": 2.0,
+  "memory_size": 3,
+  "mode": "shuffle",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "slug": "Qwen_Qwen2.5-7B-Instruct_memory3_shuffled",
+      "memory_size": 3,
+      "mode": "shuffle",
+      "status": "completed",
+      "mse": 0.3095928915729269,
+      "elapsed_sec": 822.91,
+      "resolution_deg": 2.0,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_shuffled.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_shuffled_data.json",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "resolution_deg": 2.0,
+  "memory_size": 3,
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "slug": "Qwen_Qwen2.5-7B-Instruct_memory3",
+      "memory_size": 3,
+      "status": "completed",
+      "mse": 0.32519301832275616,
+      "elapsed_sec": 673.79,
+      "resolution_deg": 2.0,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-7B-Instruct_memory3_data.json",
+      "error": ""
+    }
+  ]
+}

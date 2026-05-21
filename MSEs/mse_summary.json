@@ -4,17 +4,15 @@
   "ground_truth_data_path": "/ceph/adinchev/experiment/Generated models/ground_truth_map_data.json",
   "results": [
     {
-      "model": "Qwen/Qwen3-4B",
-      "slug": "Qwen_Qwen3-4B_reasoning_n20",
+      "model": "google/gemma-3-12b-it",
+      "slug": "google_gemma-3-12b-it",
       "status": "completed",
-      "mse": 0.19642220419390058,
-      "elapsed_sec": 85316.55,
+      "mse": 0.33470178745127194,
+      "elapsed_sec": 173.2,
       "resolution_deg": 2.0,
-      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n20.png",
-      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen3-4B_reasoning_n20_data.json",
-      "error": "",
-      "reasoning": true,
-      "num_samples": 20
+      "map_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/google_gemma-3-12b-it_data.json",
+      "error": ""
     }
   ]
 }
