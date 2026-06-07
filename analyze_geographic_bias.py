@@ -262,11 +262,17 @@ def main():
 
     runs = {}
     for slug in args.models:
-        p = DATA_DIR / f"{slug}_data.json"
+        # Look in the flat root first (back-compat), then recurse into the
+        # per-experiment sub-folders created by organize_generated_models.py.
+        target = f"{slug}_data.json"
+        p = DATA_DIR / target
         if not p.exists():
-            print(f"  [skip] {slug} -> {p} not found")
+            matches = list(DATA_DIR.rglob(target))
+            p = matches[0] if matches else p
+        if not p.exists():
+            print(f"  [skip] {slug} -> {target} not found under {DATA_DIR}")
             continue
-        print(f"  [load] {slug}")
+        print(f"  [load] {slug}  ({p.relative_to(DATA_DIR)})")
         runs[slug] = _load_run(p)
 
     if not runs:

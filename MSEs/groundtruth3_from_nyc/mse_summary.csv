@@ -1,0 +1,2 @@
+model,slug,status,mse,elapsed_sec,resolution_deg,map_path,data_path,error
+Qwen/Qwen2.5-32B-Instruct-AWQ,Qwen_Qwen2.5-32B-Instruct-AWQ_groundtruth3_from_nyc,completed,0.0551246309378002,1975.25,2.0,/ceph/adinchev/experiment/Generated models/ground_truth_memory_experiment/Qwen_Qwen2.5-32B-Instruct-AWQ_groundtruth3_from_nyc.png,/ceph/adinchev/experiment/Generated models/ground_truth_memory_experiment/Qwen_Qwen2.5-32B-Instruct-AWQ_groundtruth3_from_nyc_data.json,

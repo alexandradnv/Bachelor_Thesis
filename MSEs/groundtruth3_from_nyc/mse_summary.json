@@ -1,0 +1,23 @@
+{
+  "resolution_deg": 2.0,
+  "memory_size": 3,
+  "context_source": "groundtruth",
+  "anchor": "nyc",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-32B-Instruct-AWQ",
+      "slug": "Qwen_Qwen2.5-32B-Instruct-AWQ_groundtruth3_from_nyc",
+      "context_source": "groundtruth",
+      "memory_size": 3,
+      "anchor_key": "nyc",
+      "anchor_name": "New York City, USA",
+      "status": "completed",
+      "mse": 0.0551246309378002,
+      "elapsed_sec": 1975.25,
+      "resolution_deg": 2.0,
+      "map_path": "/ceph/adinchev/experiment/Generated models/ground_truth_memory_experiment/Qwen_Qwen2.5-32B-Instruct-AWQ_groundtruth3_from_nyc.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/ground_truth_memory_experiment/Qwen_Qwen2.5-32B-Instruct-AWQ_groundtruth3_from_nyc_data.json",
+      "error": ""
+    }
+  ]
+}

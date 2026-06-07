@@ -1,0 +1,23 @@
+{
+  "resolution_deg": 2.0,
+  "memory_size": 3,
+  "context_source": "groundtruth",
+  "anchor": "mannheim",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-Coder-32B-Instruct-AWQ",
+      "slug": "Qwen_Qwen2.5-Coder-32B-Instruct-AWQ_groundtruth3_from_mannheim",
+      "context_source": "groundtruth",
+      "memory_size": 3,
+      "anchor_key": "mannheim",
+      "anchor_name": "Mannheim, Germany",
+      "status": "completed",
+      "mse": 0.10811723302546841,
+      "elapsed_sec": 1931.28,
+      "resolution_deg": 2.0,
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-Coder-32B-Instruct-AWQ_groundtruth3_from_mannheim.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-Coder-32B-Instruct-AWQ_groundtruth3_from_mannheim_data.json",
+      "error": ""
+    }
+  ]
+}

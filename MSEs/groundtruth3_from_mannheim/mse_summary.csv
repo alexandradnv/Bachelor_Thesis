@@ -1,0 +1,2 @@
+model,slug,status,mse,elapsed_sec,resolution_deg,map_path,data_path,error
+Qwen/Qwen2.5-Coder-32B-Instruct-AWQ,Qwen_Qwen2.5-Coder-32B-Instruct-AWQ_groundtruth3_from_mannheim,completed,0.10811723302546841,1931.28,2.0,/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-Coder-32B-Instruct-AWQ_groundtruth3_from_mannheim.png,/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-Coder-32B-Instruct-AWQ_groundtruth3_from_mannheim_data.json,

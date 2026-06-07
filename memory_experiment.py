@@ -174,6 +174,11 @@ def _mode_suffix(mode: str, memory_size: int) -> str:
     raise ValueError(f"Unknown mode: {mode}")
 
 
+# Sub-folder of `Generated models/` where every memory-experiment variant
+# (sequential / shuffled / per-row-seeded) deposits its map + JSON.
+MEMORY_SUBDIR = "memory_experiment"
+
+
 def run_memory_experiment(
     model: str,
     resolution: float,
@@ -190,7 +195,11 @@ def run_memory_experiment(
     if mode not in VALID_MODES:
         raise ValueError(f"mode must be one of {VALID_MODES}, got {mode}")
 
+    # Per-experiment sub-folder; created on demand.  `output_dir` is the
+    # top-level `Generated models/` directory used for shared assets.
     output_dir.mkdir(parents=True, exist_ok=True)
+    sub_dir = output_dir / MEMORY_SUBDIR
+    sub_dir.mkdir(parents=True, exist_ok=True)
 
     if coords is None or n_rows is None or n_cols is None:
         coords, n_rows, n_cols = generate_coordinates(resolution)
@@ -265,8 +274,8 @@ def run_memory_experiment(
 
     slug = slugify_model_name(model)
     suffix = _mode_suffix(mode, memory_size)
-    map_path = output_dir / f"{slug}{suffix}.png"
-    data_path = output_dir / f"{slug}{suffix}_data.json"
+    map_path = sub_dir / f"{slug}{suffix}.png"
+    data_path = sub_dir / f"{slug}{suffix}_data.json"
 
     write_json(
         data_path,

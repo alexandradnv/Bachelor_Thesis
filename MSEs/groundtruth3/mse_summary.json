@@ -5,18 +5,18 @@
   "anchor": null,
   "results": [
     {
-      "model": "casperhansen/mixtral-instruct-awq",
-      "slug": "casperhansen_mixtral-instruct-awq_groundtruth3",
+      "model": "Qwen/Qwen2.5-Coder-32B-Instruct-AWQ",
+      "slug": "Qwen_Qwen2.5-Coder-32B-Instruct-AWQ_groundtruth3",
       "context_source": "groundtruth",
       "memory_size": 3,
       "anchor_key": null,
       "anchor_name": null,
       "status": "completed",
-      "mse": 0.06798926389609604,
-      "elapsed_sec": 1210.07,
+      "mse": 0.13103236851279296,
+      "elapsed_sec": 2001.1,
       "resolution_deg": 2.0,
-      "map_path": "/ceph/adinchev/experiment/Generated models/casperhansen_mixtral-instruct-awq_groundtruth3.png",
-      "data_path": "/ceph/adinchev/experiment/Generated models/casperhansen_mixtral-instruct-awq_groundtruth3_data.json",
+      "map_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-Coder-32B-Instruct-AWQ_groundtruth3.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/Qwen_Qwen2.5-Coder-32B-Instruct-AWQ_groundtruth3_data.json",
       "error": ""
     }
   ]

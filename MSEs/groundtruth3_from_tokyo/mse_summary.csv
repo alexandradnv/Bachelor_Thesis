@@ -1,0 +1,2 @@
+model,slug,status,mse,elapsed_sec,resolution_deg,map_path,data_path,error
+Qwen/Qwen2.5-32B-Instruct-AWQ,Qwen_Qwen2.5-32B-Instruct-AWQ_groundtruth3_from_tokyo,completed,0.05753043098340255,2925.29,2.0,/ceph/adinchev/experiment/Generated models/ground_truth_memory_experiment/Qwen_Qwen2.5-32B-Instruct-AWQ_groundtruth3_from_tokyo.png,/ceph/adinchev/experiment/Generated models/ground_truth_memory_experiment/Qwen_Qwen2.5-32B-Instruct-AWQ_groundtruth3_from_tokyo_data.json,

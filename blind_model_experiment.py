@@ -664,7 +664,7 @@ def query_reasoning_samples(
     language: Optional[Dict[str, str]] = None,
     num_samples: int = 5,
     max_tokens: int = 1024,
-    temperature: float = 0.7,
+    temperature: float = 1.0,
 ):
     """Multi-sample voting for reasoning models.
 

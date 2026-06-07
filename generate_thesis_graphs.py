@@ -7,9 +7,11 @@ Produces five figures (PNG + PDF):
   1c. model_size_experiment_bars   - same as 1b but as a sorted bar chart
   2.  anchor_experiment            - Qwen2.5-32B-Instruct-AWQ vs 5/10/15/20 anchors
   3.  language_experiment          - Qwen + BgGPT models in different languages
+  4.  ground_truth_memory_experiment - baseline vs 3 correctly-labelled neighbours
 """
 
 import csv
+import json
 import re
 from pathlib import Path
 
@@ -107,9 +109,9 @@ ax.set_xlim(0, max(values) * 1.12)
 ax.grid(True, axis="x", alpha=0.45)
 ax.set_axisbelow(True)
 
-# subtle reference line at MSE = 0.25 (uniform-50% map)
+# subtle reference line at MSE = 0.25 (random-guessing map)
 ax.axvline(0.25, color="#888888", linestyle="--", linewidth=0.8, alpha=0.7)
-ax.text(0.25, -0.6, "uniform 0.5 baseline (MSE = 0.25)",
+ax.text(0.25, -0.6, "random guessing baseline (MSE = 0.25)",
         fontsize=8, color="#666666", ha="center", va="top")
 
 fig.tight_layout()
@@ -117,7 +119,7 @@ out = OUT_DIR / "normal_experiment"
 fig.savefig(out.with_suffix(".png"))
 fig.savefig(out.with_suffix(".pdf"))
 plt.close(fig)
-print(f"[1/5] {len(labels)} models -> {out}.png/.pdf")
+print(f"[1/6] {len(labels)} models -> {out}.png/.pdf")
 
 
 # ============================================================
@@ -185,10 +187,10 @@ for x, y, name in size_points:
     ax.annotate(name, (x, y), xytext=(5, 4), textcoords="offset points",
                 fontsize=8, color="#333333")
 
-# Reference line: uniform-50% baseline
+# Reference line: random-guessing baseline
 ax.axhline(0.25, color="#888888", linestyle="--", linewidth=0.8, alpha=0.7)
 ax.text(ax.get_xlim()[1] if False else xs.max() * 1.02, 0.25,
-        "uniform 0.5 baseline", fontsize=8, color="#666666",
+        "random guessing baseline", fontsize=8, color="#666666",
         va="center", ha="left")
 
 ax.set_xscale("log")
@@ -203,7 +205,7 @@ out = OUT_DIR / "model_size_experiment"
 fig.savefig(out.with_suffix(".png"))
 fig.savefig(out.with_suffix(".pdf"))
 plt.close(fig)
-print(f"[2/5] {len(size_points)} models -> {out}.png/.pdf")
+print(f"[2/6] {len(size_points)} models -> {out}.png/.pdf")
 
 
 # ------------------------------------------------------------
@@ -307,7 +309,7 @@ ax.set_ylabel("MSE vs. ground-truth water/land map")
 ax.set_title("Reconstruction Error by Model (sorted by parameter count)")
 ax.set_ylim(0, max(bar_values) * 1.12)
 ax.axhline(0.25, color="#888888", linestyle="--", linewidth=0.8, alpha=0.7)
-ax.text(len(size_points_1c) - 0.5, 0.25, " uniform 0.5 baseline",
+ax.text(len(size_points_1c) - 0.5, 0.25, " random guessing baseline",
         fontsize=8, color="#666666", va="center", ha="left")
 ax.grid(True, axis="y", alpha=0.45)
 ax.set_axisbelow(True)
@@ -317,7 +319,7 @@ out = OUT_DIR / "model_size_experiment_bars"
 fig.savefig(out.with_suffix(".png"))
 fig.savefig(out.with_suffix(".pdf"))
 plt.close(fig)
-print(f"[3/5] {len(size_points_1c)} models -> {out}.png/.pdf")
+print(f"[3/6] {len(size_points_1c)} models -> {out}.png/.pdf")
 
 
 # ============================================================
@@ -365,7 +367,7 @@ out = OUT_DIR / "anchor_experiment"
 fig.savefig(out.with_suffix(".png"))
 fig.savefig(out.with_suffix(".pdf"))
 plt.close(fig)
-print(f"[4/5] {len(ns)} anchor settings -> {out}.png/.pdf")
+print(f"[4/6] {len(ns)} anchor settings -> {out}.png/.pdf")
 
 
 # ============================================================
@@ -445,4 +447,75 @@ out = OUT_DIR / "language_experiment"
 fig.savefig(out.with_suffix(".png"))
 fig.savefig(out.with_suffix(".pdf"))
 plt.close(fig)
-print(f"[5/5] {n_models} models x {n_langs} languages -> {out}.png/.pdf")
+print(f"[5/6] {n_models} models x {n_langs} languages -> {out}.png/.pdf")
+
+
+# ============================================================
+#  4. GROUND-TRUTH MEMORY EXPERIMENT
+# ============================================================
+# Grouped bars: one-shot baseline vs. the same model given three
+# correctly-labelled neighbouring coordinates in context.
+#   baseline MSE -> all_mses.csv (no-suffix slug)
+#   memory   MSE -> Generated models/ground_truth_memory_experiment/
+#                   <slug>_groundtruth3_data.json
+GT_DIR = SCRIPT_DIR / "Generated models" / "ground_truth_memory_experiment"
+
+# (baseline slug, display name) in the order shown in the thesis.
+gtmem_models = [
+    ("Qwen_Qwen2.5-3B-Instruct",            "Qwen2.5-3B-Instruct"),
+    ("Qwen_Qwen2.5-7B-Instruct",            "Qwen2.5-7B-Instruct"),
+    ("casperhansen_mixtral-instruct-awq",   "Mixtral-8x7B-Instruct (AWQ)"),
+    ("Qwen_Qwen2.5-Coder-32B-Instruct-AWQ", "Qwen2.5-Coder-32B-Instruct (AWQ)"),
+    ("Qwen_Qwen2.5-32B-Instruct-AWQ",       "Qwen2.5-32B-Instruct (AWQ)"),
+]
+
+baseline_by_slug = {r["slug"]: r["mse"] for r in rows}
+
+gt_labels, gt_baseline, gt_memory = [], [], []
+for slug, label in gtmem_models:
+    data_path = GT_DIR / f"{slug}_groundtruth3_data.json"
+    with open(data_path) as fh:
+        mem_mse = float(json.load(fh)["mse"])
+    gt_labels.append(label)
+    gt_baseline.append(baseline_by_slug[slug])
+    gt_memory.append(mem_mse)
+
+fig, ax = plt.subplots(figsize=(11, 6))
+
+x = np.arange(len(gt_labels))
+bar_w = 0.38
+b_bars = ax.bar(x - bar_w / 2, gt_baseline, width=bar_w, color=PRIMARY,
+                edgecolor="white", label="Baseline (Land/Water one-shot)")
+m_bars = ax.bar(x + bar_w / 2, gt_memory, width=bar_w, color=HIGHLIGHT,
+                edgecolor="white", label="Ground-truth memory (3 neighbours)")
+
+for bars in (b_bars, m_bars):
+    for bar in bars:
+        v = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width() / 2, v + 0.005,
+                f"{v:.3f}", ha="center", va="bottom", fontsize=9, color="#333333")
+
+# Reference line: random-guessing baseline. Label sits in the right margin at
+# the line height (y in data coords, x in axes fraction) so it never collides
+# with a bar, mirroring the annotation style of normal_experiment.
+ax.axhline(0.25, color="#888888", linestyle="--", linewidth=0.8, alpha=0.7)
+ax.text(1.01, 0.25, "random guessing\nbaseline (MSE = 0.25)",
+        transform=ax.get_yaxis_transform(), fontsize=8, color="#666666",
+        ha="left", va="center")
+
+ax.set_xticks(x)
+ax.set_xticklabels(gt_labels, rotation=18, ha="right")
+ax.set_ylabel("MSE vs. ground-truth water/land map")
+ax.set_title("Effect of Three Correctly-Labelled Neighbours on Reconstruction "
+             "Error\n(Ground-Truth Memory Experiment)")
+ax.set_ylim(0, max(gt_baseline) * 1.18)
+ax.grid(True, axis="y", alpha=0.45)
+ax.set_axisbelow(True)
+ax.legend(loc="upper right", frameon=False)
+
+fig.tight_layout()
+out = OUT_DIR / "ground_truth_memory_experiment"
+fig.savefig(out.with_suffix(".png"))
+fig.savefig(out.with_suffix(".pdf"))
+plt.close(fig)
+print(f"[6/6] {len(gt_labels)} models -> {out}.png/.pdf")

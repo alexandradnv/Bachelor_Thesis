@@ -62,6 +62,11 @@ except ImportError as exc:
     ) from exc
 
 
+# Sub-folder of `Generated models/` where every few-shot-ground-truth
+# variant (with or without anchor) deposits its map + JSON.
+GROUNDTRUTH_SUBDIR = "ground_truth_memory_experiment"
+
+
 EMPTY_PROMPT = (
     "If this location is over land, say 'Land'. "
     "If this location is over water, say 'Water'. "
@@ -193,6 +198,8 @@ def run_groundtruth_experiment(
     anchor_key: Optional[str] = None,
 ):
     output_dir.mkdir(parents=True, exist_ok=True)
+    sub_dir = output_dir / GROUNDTRUTH_SUBDIR
+    sub_dir.mkdir(parents=True, exist_ok=True)
 
     coords, n_rows, n_cols = generate_coordinates(resolution)
     ground_truth = build_ground_truth_grid(coords, n_rows, n_cols)
@@ -260,8 +267,8 @@ def run_groundtruth_experiment(
         anchor_tag = (anchor_key or anchor[0].split(",")[0]
                       ).lower().replace(" ", "")
         suffix = f"{suffix}_from_{anchor_tag}"
-    map_path = output_dir / f"{slug}{suffix}.png"
-    data_path = output_dir / f"{slug}{suffix}_data.json"
+    map_path = sub_dir / f"{slug}{suffix}.png"
+    data_path = sub_dir / f"{slug}{suffix}_data.json"
 
     write_json(
         data_path,

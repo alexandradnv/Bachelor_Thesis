@@ -1,0 +1,23 @@
+{
+  "resolution_deg": 2.0,
+  "memory_size": 3,
+  "context_source": "groundtruth",
+  "anchor": "tokyo",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-32B-Instruct-AWQ",
+      "slug": "Qwen_Qwen2.5-32B-Instruct-AWQ_groundtruth3_from_tokyo",
+      "context_source": "groundtruth",
+      "memory_size": 3,
+      "anchor_key": "tokyo",
+      "anchor_name": "Tokyo, Japan",
+      "status": "completed",
+      "mse": 0.05753043098340255,
+      "elapsed_sec": 2925.29,
+      "resolution_deg": 2.0,
+      "map_path": "/ceph/adinchev/experiment/Generated models/ground_truth_memory_experiment/Qwen_Qwen2.5-32B-Instruct-AWQ_groundtruth3_from_tokyo.png",
+      "data_path": "/ceph/adinchev/experiment/Generated models/ground_truth_memory_experiment/Qwen_Qwen2.5-32B-Instruct-AWQ_groundtruth3_from_tokyo_data.json",
+      "error": ""
+    }
+  ]
+}
